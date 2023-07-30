@@ -6,7 +6,7 @@ import profilePic from "../../assets/profile.jpeg";
 
 const About = () => {
   return (
-    <div className="container " id="about">
+    <div className="container about" id="about">
       <motion.div
         initial={{ opacity: 0 }}
         whileInView={{ y: [-50, 0], opacity: 1 }}
