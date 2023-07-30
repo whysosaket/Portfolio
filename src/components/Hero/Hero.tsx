@@ -1,4 +1,3 @@
-import React from 'react'
 import portfolio from "../../assets/profile.jpeg"
 import "./Home.scss"
 import { motion } from 'framer-motion'
