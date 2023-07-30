@@ -16,7 +16,7 @@ const Home = () => {
 
   return (
     <motion.div
-      className="container "
+      className="container home"
       id="home"
       initial={{ y: -15, opacity: 0 }}
       animate={{ y: 0, opacity: 1 }}
