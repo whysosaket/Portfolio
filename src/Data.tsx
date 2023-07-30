@@ -1,4 +1,4 @@
-import { FaReact, FaPhoneAlt, FaUser, FaPaperPlane, FaInstagram, FaLinkedin, FaJava, FaPython, FaGithub } from "react-icons/fa";
+import { FaReact, FaPhoneAlt, FaUser, FaPaperPlane, FaInstagram, FaLinkedin, FaJava, FaPython, FaGithub, FaMapMarkerAlt } from "react-icons/fa";
 import { DiNodejs } from "react-icons/di";
 import { SiJupyter, SiTypescript } from "react-icons/si";
 import { TbBrandNextjs, TbBrandCpp } from "react-icons/tb";
@@ -82,5 +82,23 @@ export const bios = [
       id: 4,
       number: "5+",
       itemName: "Events Organized"
+    }
+  ]
+
+  export const contacts = [
+    {
+      id: 1,
+      icon: <FaMapMarkerAlt />,
+      infoText: "ITER, SOA, Bhubaneswar, Odisha, India"
+    },
+    {
+      id: 2,
+      icon: <FaPaperPlane />,
+      infoText: "saketaryan2002@gmail.com"
+    },
+    {
+      id: 3,
+      icon: <FaPhoneAlt />,
+      infoText: "+919950262900"
     }
   ]
