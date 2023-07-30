@@ -46,8 +46,8 @@ const Navbar = () => {
       className={scroll ? "header active" : "header"}
     >
       <div className="Nav_container">
-        <div className="logo">
-          <h3>S</h3>
+        <div className="logo" style={{overflow: 'hidden'}}>
+          <h3><img style={{borderRadius: '100%', position: 'relative', 'top': '3px'}} src="./avatar.png" /></h3>
         </div>
         <ul className="nav_links">
           {navLinks.map((navlink, index) => {
