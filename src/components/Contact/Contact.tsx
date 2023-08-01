@@ -112,8 +112,9 @@ const Contact = () => {
             whileHover={{ scale: 1.1 }}
             transition={{ duration: 0.3 }}
             className="btn"
+            onClick={handleSubmit}
           >
-            <a onClick={handleSubmit}>Send</a>
+            <a>Send</a>
           </motion.div>
         </motion.div>
       </div>
