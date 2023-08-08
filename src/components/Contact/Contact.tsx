@@ -4,20 +4,27 @@ import { contacts } from "../../Data";
 import { socialIcons } from "../../Data";
 import { motion } from "framer-motion";
 
-const Contact = () => {
+const Contact = (props: {setProgress: (progress: number)=> void}) => {
   const firstNameRef = useRef<HTMLInputElement>(null);
   const lastNameRef = useRef<HTMLInputElement>(null);
   const phoneRef = useRef<HTMLInputElement>(null);
   const emailRef = useRef<HTMLInputElement>(null);
   const messageRef = useRef<HTMLTextAreaElement>(null);
+  const { setProgress } = props
 
   const handleSubmit = (e: any) => {
+    setProgress(30);
     e.preventDefault();
     const firstName = firstNameRef.current!.value;
     const lastName = lastNameRef.current!.value;
     const phone = phoneRef.current!.value;
     const email = emailRef.current!.value;
     const message = messageRef.current!.value;
+    if(!firstName || !lastName || !phone || !email || !message) {
+      alert("Please fill out all fields");
+      setProgress(0);
+      return;
+    }
     const data = {
       firstName: firstName,
       lastName: lastName,
@@ -25,6 +32,7 @@ const Contact = () => {
       email: email,
       message: message,
     };
+    setProgress(60);
     fetch(import.meta.env.VITE_API, {
       method: "POST",
       headers: {
@@ -34,6 +42,7 @@ const Contact = () => {
     })
       .then((res) => res.json())
       .then((data) => {
+        setProgress(100);
         if (data.success) {
           alert("Message Sent. Thank you for contacting me.");
           firstNameRef.current!.value = "";
