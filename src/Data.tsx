@@ -19,6 +19,11 @@ import work3 from "./assets/work3.png";
 import work4 from "./assets/work4.png";
 import work5 from "./assets/work5.png";
 import work6 from "./assets/work6.png";
+import work7 from "./assets/work7.png";
+import work8 from "./assets/work8.png";
+import work9 from "./assets/work9.png";
+import work10 from "./assets/work10.png";
+import work11 from "./assets/work11.png";
 
 export const navLinks = ["home", "about", "skills", "projects", "contact"];
 
@@ -135,7 +140,7 @@ export const workImages = [
     name: "SixthSense",
     category: "ml",
     github: "https://github.com/whysosaket/SixthSense",
-    deploy: "",
+    deploy: "https://sixthsense.vercel.app",
   },
   {
     id: 2,
@@ -143,6 +148,38 @@ export const workImages = [
     name: "PayBackPal",
     category: "app",
     github: "https://github.com/whysosaket/PayBackPal",
+    deploy: "",
+  },
+  {
+    id: 8,
+    img: work8,
+    name: "Saarthi",
+    category: "web",
+    github: "https://github.com/whysosaket/Saarthi",
+    deploy: "",
+  },
+  {
+    id: 7,
+    img: work7,
+    name: "Carmine Bank",
+    category: "web",
+    github: "https://github.com/whysosaket/Banking-Spring-Boot",
+    deploy: "https://carminebank.vercel.app",
+  },
+  {
+    id: 5,
+    img: work5,
+    name: "LinkMyLinks",
+    category: "web",
+    github: "https://github.com/whysosaket/LinkMyLinks",
+    deploy: "https://linkmylinks.vercel.app",
+  },
+  {
+    id: 11,
+    img: work11,
+    name: "GreenMe",
+    category: "app",
+    github: "https://github.com/whysosaket/GreenMe",
     deploy: "",
   },
   {
@@ -154,28 +191,36 @@ export const workImages = [
     deploy: "",
   },
   {
+    id: 6,
+    img: work6,
+    name: "VAttend",
+    category: "web",
+    github: "https://github.com/whysosaket/VAttend-TS",
+    deploy: "https://vattend.vercel.app",
+  },
+  {
+    id: 9,
+    img: work9,
+    name: "Musiccart",
+    category: "web",
+    github: "https://github.com/whysosaket/MusicCart",
+    deploy: "https://musicartnew.netlify.app",
+  },
+  {
+    id: 10,
+    img: work10,
+    name: "Quizzie",
+    category: "web",
+    github: "https://github.com/whysosaket/Quizzie",
+    deploy: "https://quizzie-client.vercel.app",
+  },
+  {
     id: 4,
     img: work4,
     name: "FindMyMovie",
     category: "web",
     github: "https://github.com/whysosaket/FindMyMovie",
     deploy: "https://findmymovie.onrender.com/",
-  },
-  {
-    id: 5,
-    img: work5,
-    name: "LinkMyLinks",
-    category: "web",
-    github: "https://github.com/whysosaket/LinkMyLinks",
-    deploy: "https://linkmylinks.netlify.app/",
-  },
-  {
-    id: 6,
-    img: work6,
-    name: "VAttend",
-    category: "web",
-    github: "https://github.com/whysosaket/VAttend",
-    deploy: "https://vattend.netlify.app",
   },
 ];
 
